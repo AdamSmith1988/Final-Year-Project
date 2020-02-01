@@ -1,0 +1,218 @@
+﻿<Project xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <ProductVersion>13.0.1701.8</ProductVersion>
+  <SchemaVersion>9.0.2.10</SchemaVersion>
+  <State>$base64$PFNvdXJjZUNvbnRyb2xJbmZvIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOmRkbDI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yIiB4bWxuczpkZGwyXzI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yLzIiIHhtbG5zOmRkbDEwMF8xMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDA4L2VuZ2luZS8xMDAvMTAwIiB4bWxuczpkZGwyMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAiIHhtbG5zOmRkbDIwMF8yMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAvMjAwIiB4bWxuczpkZGwzMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAiIHhtbG5zOmRkbDMwMF8zMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAvMzAwIiB4bWxuczpkZGw0MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAiIHhtbG5zOmRkbDQwMF80MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAvNDAwIiB4bWxuczpkZGw1MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEzL2VuZ2luZS81MDAiIHhtbG5zOmRkbDUwMF81MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEzL2VuZ2luZS81MDAvNTAwIiB4bWxuczpkd2Q9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vRGF0YVdhcmVob3VzZS9EZXNpZ25lci8xLjAiPg0KICA8RW5hYmxlZD5mYWxzZTwvRW5hYmxlZD4NCiAgPFByb2plY3ROYW1lPjwvUHJvamVjdE5hbWU+DQogIDxBdXhQYXRoPjwvQXV4UGF0aD4NCiAgPExvY2FsUGF0aD48L0xvY2FsUGF0aD4NCiAgPFByb3ZpZGVyPjwvUHJvdmlkZXI+DQo8L1NvdXJjZUNvbnRyb2xJbmZvPg==</State>
+  <Database>
+    <Name>SSAS_FinalBookings.database</Name>
+    <FullPath>SSAS_FinalBookings.database</FullPath>
+  </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>Final Year.cube</Name>
+      <FullPath>Final Year.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Final Year.partitions</Name>
+          <FullPath>Final Year.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
+  <Dimensions>
+    <ProjectItem>
+      <Name>Customer.dim</Name>
+      <FullPath>Customer.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Booking.dim</Name>
+      <FullPath>Booking.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Booking Attendance.dim</Name>
+      <FullPath>Booking Attendance.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Booking Time.dim</Name>
+      <FullPath>Booking Time.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Cost.dim</Name>
+      <FullPath>Cost.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Payment Method.dim</Name>
+      <FullPath>Payment Method.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Invoice.dim</Name>
+      <FullPath>Invoice.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Company.dim</Name>
+      <FullPath>Company.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Company Opening Hours.dim</Name>
+      <FullPath>Company Opening Hours.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Industry.dim</Name>
+      <FullPath>Industry.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Company Reviews.dim</Name>
+      <FullPath>Company Reviews.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Events.dim</Name>
+      <FullPath>Events.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sysdiagrams.dim</Name>
+      <FullPath>Sysdiagrams.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Equiptment Type.dim</Name>
+      <FullPath>Equiptment Type.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Equiptment.dim</Name>
+      <FullPath>Equiptment.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Staff Role.dim</Name>
+      <FullPath>Staff Role.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Staff.dim</Name>
+      <FullPath>Staff.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>System Authorization.dim</Name>
+      <FullPath>System Authorization.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Staff Access.dim</Name>
+      <FullPath>Staff Access.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Stock.dim</Name>
+      <FullPath>Stock.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Product Image.dim</Name>
+      <FullPath>Product Image.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Product Suppliers.dim</Name>
+      <FullPath>Product Suppliers.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Stock Type.dim</Name>
+      <FullPath>Stock Type.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>All Reviews.dim</Name>
+      <FullPath>All Reviews.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Booking Next Month.dim</Name>
+      <FullPath>Booking Next Month.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Booking Attendance dbo.dim</Name>
+      <FullPath>Booking Attendance dbo.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Company ID38 Bookings.dim</Name>
+      <FullPath>Company ID38 Bookings.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Future Bookings.dim</Name>
+      <FullPath>Future Bookings.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Positive Reviews.dim</Name>
+      <FullPath>Positive Reviews.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Negative Reviews.dim</Name>
+      <FullPath>Negative Reviews.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Invoice dbo.dim</Name>
+      <FullPath>Invoice dbo.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>All Bookings.dim</Name>
+      <FullPath>All Bookings.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Price List.dim</Name>
+      <FullPath>Price List.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Price Specific.dim</Name>
+      <FullPath>Price Specific.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Stock Photo.dim</Name>
+      <FullPath>Stock Photo.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
+  <DataSources>
+    <ProjectItem>
+      <Name>Final Year.ds</Name>
+      <FullPath>Final Year.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>Final Year.dsv</Name>
+      <FullPath>Final Year.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
+  <MiningModels>
+    <ProjectItem>
+      <Name>BookingAttendance.dmm</Name>
+      <FullPath>BookingAttendance.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>BookingAttndance2.dmm</Name>
+      <FullPath>BookingAttndance2.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Customer.dmm</Name>
+      <FullPath>Customer.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Customer_Booking.dmm</Name>
+      <FullPath>Customer_Booking.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>AttendedBasedOnGender.dmm</Name>
+      <FullPath>AttendedBasedOnGender.dmm</FullPath>
+    </ProjectItem>
+  </MiningModels>
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>Final Year</Id>
+            <Name>Final Year</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=ADAMSMITH\NEWSQL;Integrated Security=SSPI;Initial Catalog=FinalYear</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>Final Year</Id>
+            <Name>Final Year</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+      </Options>
+    </Configuration>
+  </Configurations>
+</Project>

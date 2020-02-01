@@ -1,0 +1,437 @@
+﻿<ConfigurationSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Database>
+    <DataSources>
+      <DataSource>
+        <ID>Final Year</ID>
+        <ConnectionString>Provider=SQLNCLI11.1;Data Source=ADAMSMITH\NEWSQL;Integrated Security=SSPI;Initial Catalog=FinalYear</ConnectionString>
+        <ImpersonationInfo>
+          <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Default</ImpersonationMode>
+          <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
+        </ImpersonationInfo>
+      </DataSource>
+    </DataSources>
+    <Dimensions>
+      <Dimension>
+        <ID>Customer</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Booking</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Booking Attendance</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Booking Time</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Cost</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Payment Method</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Invoice</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Company</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Company Opening Hours</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Industry</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Company Reviews</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Events</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Sysdiagrams</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Equiptment Type</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Equiptment</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Staff Role</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Staff</ID>
+      </Dimension>
+      <Dimension>
+        <ID>System Authorization</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Staff Access</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Stock</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Product Image</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Product Suppliers</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Stock Type</ID>
+      </Dimension>
+      <Dimension>
+        <ID>All Reviews</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Booking Next Month</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Booking Attendance dbo</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Company ID38 Bookings</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Future Bookings</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Positive Reviews</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Negative Reviews</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Invoice dbo</ID>
+      </Dimension>
+      <Dimension>
+        <ID>All Bookings</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Price List</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Price Specific</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Stock Photo</ID>
+      </Dimension>
+    </Dimensions>
+    <MiningStructures>
+      <MiningStructure>
+        <ID>Booking</ID>
+      </MiningStructure>
+      <MiningStructure>
+        <ID>Booking 1</ID>
+      </MiningStructure>
+      <MiningStructure>
+        <ID>Customer</ID>
+      </MiningStructure>
+      <MiningStructure>
+        <ID>Customer_Booking</ID>
+      </MiningStructure>
+      <MiningStructure>
+        <ID>AttendedBasedOnGender</ID>
+      </MiningStructure>
+    </MiningStructures>
+    <Cubes>
+      <Cube>
+        <ID>Final Year</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Booking Attendance</ID>
+            <Partitions>
+              <Partition>
+                <ID>Booking Attendance</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Booking Time</ID>
+            <Partitions>
+              <Partition>
+                <ID>Booking Time</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Invoice</ID>
+            <Partitions>
+              <Partition>
+                <ID>Invoice</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Payment Method</ID>
+            <Partitions>
+              <Partition>
+                <ID>Payment Method</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Company Opening Hours</ID>
+            <Partitions>
+              <Partition>
+                <ID>Company Opening Hours</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Industry</ID>
+            <Partitions>
+              <Partition>
+                <ID>Industry</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Company Reviews</ID>
+            <Partitions>
+              <Partition>
+                <ID>Company Reviews</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Events</ID>
+            <Partitions>
+              <Partition>
+                <ID>Events</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Sysdiagrams</ID>
+            <Partitions>
+              <Partition>
+                <ID>Sysdiagrams</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Cost</ID>
+            <Partitions>
+              <Partition>
+                <ID>Cost</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Company</ID>
+            <Partitions>
+              <Partition>
+                <ID>Company</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Customer</ID>
+            <Partitions>
+              <Partition>
+                <ID>Customer</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Users</ID>
+            <Partitions>
+              <Partition>
+                <ID>Users</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Equiptment</ID>
+            <Partitions>
+              <Partition>
+                <ID>Equiptment</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Equiptment Type</ID>
+            <Partitions>
+              <Partition>
+                <ID>Equiptment Type</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Staff</ID>
+            <Partitions>
+              <Partition>
+                <ID>Staff</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Staff Access</ID>
+            <Partitions>
+              <Partition>
+                <ID>Staff Access</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Staff Role</ID>
+            <Partitions>
+              <Partition>
+                <ID>Staff Role</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Stock Level</ID>
+            <Partitions>
+              <Partition>
+                <ID>Stock Level</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Product Image</ID>
+            <Partitions>
+              <Partition>
+                <ID>Product Image</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>System Authorization</ID>
+            <Partitions>
+              <Partition>
+                <ID>System Authorization</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Product Suppliers</ID>
+            <Partitions>
+              <Partition>
+                <ID>Product Suppliers</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Stock</ID>
+            <Partitions>
+              <Partition>
+                <ID>Stock</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Stock Type</ID>
+            <Partitions>
+              <Partition>
+                <ID>Stock Type</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>All Reviews</ID>
+            <Partitions>
+              <Partition>
+                <ID>All Reviews</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Booking Next Month</ID>
+            <Partitions>
+              <Partition>
+                <ID>Booking Next Month</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Booking Attendance dbo</ID>
+            <Partitions>
+              <Partition>
+                <ID>Booking Attendance dbo</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Company ID38 Bookings</ID>
+            <Partitions>
+              <Partition>
+                <ID>Company ID38 Bookings</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Future Bookings</ID>
+            <Partitions>
+              <Partition>
+                <ID>Future Bookings</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Positive Reviews</ID>
+            <Partitions>
+              <Partition>
+                <ID>Positive Reviews</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Negative Reviews</ID>
+            <Partitions>
+              <Partition>
+                <ID>Negative Reviews</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Invoice dbo</ID>
+            <Partitions>
+              <Partition>
+                <ID>Invoice dbo</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>All Bookings</ID>
+            <Partitions>
+              <Partition>
+                <ID>All Bookings</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Price List</ID>
+            <Partitions>
+              <Partition>
+                <ID>Price List</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Price Specific</ID>
+            <Partitions>
+              <Partition>
+                <ID>Price Specific</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Stock Photo</ID>
+            <Partitions>
+              <Partition>
+                <ID>Stock Photo</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+    </Cubes>
+    <DataSourceImpersonationInfo>
+      <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Default</ImpersonationMode>
+      <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
+    </DataSourceImpersonationInfo>
+  </Database>
+</ConfigurationSettings>

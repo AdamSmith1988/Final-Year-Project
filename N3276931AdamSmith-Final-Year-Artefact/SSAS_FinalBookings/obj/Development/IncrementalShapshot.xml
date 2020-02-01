@@ -1,0 +1,334 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>SSAS_FinalBookings</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>D4geG98SmjOI3V+iH9WcD0TRhxY=09/04/2018 20:38:4401/05/2018 12:51:42</TimeStamp>
+        <ID>
+          <String>Final Year</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>Xq0veQG+u2QaQLhOBZjEj9HFnqc=09/04/2018 20:39:4201/05/2018 12:51:42</TimeStamp>
+        <ID>
+          <String>Final Year</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ff679Nm6cv+bX4Wzabbh4ZdeO4g=10/04/2018 20:53:4801/05/2018 12:51:42</TimeStamp>
+        <ID>
+          <String>Customer</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>GbCQ7mcijVwlxjUU2+Mmd0TIXjk=10/04/2018 20:54:1601/05/2018 12:51:42</TimeStamp>
+        <ID>
+          <String>Booking</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>E9KTyzmtO/aD3AuAZU/SsMwceMI=10/04/2018 20:51:4401/05/2018 12:51:42</TimeStamp>
+        <ID>
+          <String>Booking Attendance</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>e6PQH9TdgsuNJpKErk3QlFba0+Q=10/04/2018 20:54:2601/05/2018 12:51:42</TimeStamp>
+        <ID>
+          <String>Booking Time</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>+kvKwDFXXi9fT0ry2HNX1sYuwgU=10/04/2018 20:58:3201/05/2018 12:51:42</TimeStamp>
+        <ID>
+          <String>Cost</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>0OTodxX/aww6Ro2zNFSC3c4O+Us=10/04/2018 20:56:4801/05/2018 12:51:42</TimeStamp>
+        <ID>
+          <String>Payment Method</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>tx5/CZLsqf+quwSSb4vpJ1gt3h8=10/04/2018 20:55:1801/05/2018 12:51:42</TimeStamp>
+        <ID>
+          <String>Invoice</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>2ziAR/28nJJFWTeH2FTs0TNQ5yE=10/04/2018 21:21:3001/05/2018 12:51:42</TimeStamp>
+        <ID>
+          <String>Company</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>y/HeloICreSbPpyxTlQLoeaTKrg=10/04/2018 20:58:2201/05/2018 12:51:42</TimeStamp>
+        <ID>
+          <String>Company Opening Hours</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>CVGBQGcQ7ekILumRylZa1hr0UBU=10/04/2018 20:59:1201/05/2018 12:51:42</TimeStamp>
+        <ID>
+          <String>Industry</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Qa754dTaqsTgMSuZqRDrBzZ96Vs=09/04/2018 20:41:3601/05/2018 12:51:42</TimeStamp>
+        <ID>
+          <String>Company Reviews</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>IGkAXAXxG6yvFKJlhk/e261Orz8=09/04/2018 20:41:3601/05/2018 12:51:42</TimeStamp>
+        <ID>
+          <String>Events</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>wOG4M605X108Y0Ci5TUq5cIsNTM=09/04/2018 20:41:3601/05/2018 12:51:42</TimeStamp>
+        <ID>
+          <String>Sysdiagrams</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>zqQQBxGjPd1tWAKxE4z4WTJZD+M=09/04/2018 20:41:3601/05/2018 12:51:42</TimeStamp>
+        <ID>
+          <String>Equiptment Type</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>A9sVU9eK8m7xC05DeXEYyxUL/A0=09/04/2018 20:41:3601/05/2018 12:51:42</TimeStamp>
+        <ID>
+          <String>Equiptment</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>6sMg0KR0u3GzHH3KBeo0hmC0nAU=09/04/2018 20:41:3601/05/2018 12:51:42</TimeStamp>
+        <ID>
+          <String>Staff Role</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Kci8g3Gr9msBQndYmeky6ZA9pwc=09/04/2018 20:41:3601/05/2018 12:51:42</TimeStamp>
+        <ID>
+          <String>Staff</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>HI/naSKFn9R4uY8uybDrCd2DW18=09/04/2018 20:41:3601/05/2018 12:51:42</TimeStamp>
+        <ID>
+          <String>System Authorization</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>px2pif+163c0xbBYxKxSJIbEgoA=09/04/2018 20:41:3601/05/2018 12:51:42</TimeStamp>
+        <ID>
+          <String>Staff Access</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>kD2K0lrZetVG1voSqFe/lSMTjUk=09/04/2018 20:41:3601/05/2018 12:51:42</TimeStamp>
+        <ID>
+          <String>Stock</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>JrprCYlZ34lLG+JFd/yBCHlXGgo=09/04/2018 20:41:3601/05/2018 12:51:42</TimeStamp>
+        <ID>
+          <String>Product Image</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>t1KMWwArs3eXZduOXfcN6Y5B8HM=09/04/2018 20:41:3601/05/2018 12:51:42</TimeStamp>
+        <ID>
+          <String>Product Suppliers</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Up8paa08uY9/bjjPgDQk9m+x2Ao=09/04/2018 20:41:3601/05/2018 12:51:42</TimeStamp>
+        <ID>
+          <String>Stock Type</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>BarWrJi70Sc+pivcvqHTX8IQ/ng=10/04/2018 21:02:2201/05/2018 12:51:42</TimeStamp>
+        <ID>
+          <String>All Reviews</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>dijFEdMtuC7/jraaejryQ+ZrqJg=09/04/2018 20:41:3601/05/2018 12:51:42</TimeStamp>
+        <ID>
+          <String>Booking Next Month</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>LCizX/i5GSr3Y82+9xOTqoo+HpE=09/04/2018 20:41:3601/05/2018 12:51:42</TimeStamp>
+        <ID>
+          <String>Booking Attendance dbo</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>S+1Aqax72drfr75Y37rnQEGxuzU=09/04/2018 20:41:3601/05/2018 12:51:42</TimeStamp>
+        <ID>
+          <String>Company ID38 Bookings</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>o4CztKsXLu3sjahaslUF8OW0Ykc=09/04/2018 20:41:3601/05/2018 12:51:42</TimeStamp>
+        <ID>
+          <String>Future Bookings</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>tEnZzxMsv+85QVBG70J3DS53X9I=10/04/2018 21:07:4601/05/2018 12:51:42</TimeStamp>
+        <ID>
+          <String>Positive Reviews</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>YXRbDOq9ltb0DLwi3hsXVXhw0Rw=10/04/2018 21:07:3801/05/2018 12:51:42</TimeStamp>
+        <ID>
+          <String>Negative Reviews</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>gKEPCVgWrb5F4hGtBI0yqjd+PSw=09/04/2018 20:41:3601/05/2018 12:51:42</TimeStamp>
+        <ID>
+          <String>Invoice dbo</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>2RvxIWNQofkHiKK1kqRdnYQ9ZFk=10/04/2018 21:07:5601/05/2018 12:51:42</TimeStamp>
+        <ID>
+          <String>All Bookings</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>YMma4Boxxcn6hspwprYoP45f41k=09/04/2018 20:41:3601/05/2018 12:51:42</TimeStamp>
+        <ID>
+          <String>Price List</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>/vkJxB+aI1d7noCZX2jGdxcVdlU=09/04/2018 20:41:3601/05/2018 12:51:42</TimeStamp>
+        <ID>
+          <String>Price Specific</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>EcaIWZQr3mc/ROfDwzPOjJQikPw=09/04/2018 20:41:3601/05/2018 12:51:42</TimeStamp>
+        <ID>
+          <String>Stock Photo</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>j2rTNoiVG5oWWtdk4F5kg5SHgQ8=10/04/2018 21:21:3001/05/2018 12:51:42zv6yMmgEdKdGWzlDLAp6fLq5hu4=09/04/2018 20:41:3401/05/2018 12:51:42</TimeStamp>
+        <ID>
+          <String>Final Year</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>g51SUSf+uJJzc3VBdU9tVAGvlAw=01/05/2018 02:37:2601/05/2018 12:51:42</TimeStamp>
+        <ID>
+          <String>Booking</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>2yUITa8eYs4QkHkBFJqnvsZUgo0=01/05/2018 02:37:3801/05/2018 12:51:42</TimeStamp>
+        <ID>
+          <String>Booking 1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>YZ7jM6Zh+xS9sfgQDgCOLiRR+rc=12/04/2018 23:54:0201/05/2018 12:51:42</TimeStamp>
+        <ID>
+          <String>Customer</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>/E+RwRMInC80afZzs7BN2FYEWFw=01/05/2018 11:49:1001/05/2018 12:51:42</TimeStamp>
+        <ID>
+          <String>Customer_Booking</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>ZBRL5gB6gaHWcMV9fHvtKWIjDaw=01/05/2018 13:04:0901/05/2018 12:51:42</TimeStamp>
+        <ID>
+          <String>AttendedBasedOnGender</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>JkdVJXySk0ZBFShziEr8Dafhq5c=09/04/2018 20:35:5201/05/2018 12:51:42</TimeStamp>
+      <ID>
+        <String>SSAS_FinalBookings</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2018-05-01T12:04:10.963333Z</LastDeployed>
+</DeploymentSnapshot>

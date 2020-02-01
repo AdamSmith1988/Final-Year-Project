@@ -1,0 +1,725 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="4c3967e8-d925-426d-8c6a-489b2f35c868" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Final Year</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Booking Attendance</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="f4d6d4f5-fb74-442c-bc5e-81c4268aca5d">
+          <ID>Booking Attendance</ID>
+          <Name>Booking Attendance</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="7748b574-2a46-43a4-9f50-cfc6ac90be39">
+            <DataSourceViewID>Final Year</DataSourceViewID>
+            <TableID>Booking_BookingAttendance</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Booking Time</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="e8eb7b15-d59c-46c8-b4be-a97b9ad79362">
+          <ID>Booking Time</ID>
+          <Name>Booking Time</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="8d6b9b64-bc0f-4401-8efa-1e8ef4bd53d5">
+            <DataSourceViewID>Final Year</DataSourceViewID>
+            <TableID>Booking_BookingTime</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Invoice</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="8ec2e849-0759-45c8-87e8-acc5e6136b3c">
+          <ID>Invoice</ID>
+          <Name>Invoice</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a6cd82bc-dfdf-47a8-9ed1-853dfdba7fdc">
+            <DataSourceViewID>Final Year</DataSourceViewID>
+            <TableID>Booking_Invoice</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Payment Method</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="0e4cfe9e-f449-41fe-a4a9-05212bfbbd3b">
+          <ID>Payment Method</ID>
+          <Name>Payment Method</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="d0fa9686-5eba-453b-9912-2390dc483fa2">
+            <DataSourceViewID>Final Year</DataSourceViewID>
+            <TableID>Booking_PaymentMethod</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Company Opening Hours</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="042b7975-b58a-4669-a76f-6960b5bad5c2">
+          <ID>Company Opening Hours</ID>
+          <Name>Company Opening Hours</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="fc4214d6-944a-47ea-9882-6628d6d84528">
+            <DataSourceViewID>Final Year</DataSourceViewID>
+            <TableID>Company_CompanyOpeningHours</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Industry</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="908a9a17-8305-41bd-b10f-f9f8d0692efe">
+          <ID>Industry</ID>
+          <Name>Industry</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="2b30b219-7f2a-45bd-9c73-fbddb65b91c9">
+            <DataSourceViewID>Final Year</DataSourceViewID>
+            <TableID>Company_Industry</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Company Reviews</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="aae99b7b-99b9-4ef1-98bf-695fe46d4e50">
+          <ID>Company Reviews</ID>
+          <Name>Company Reviews</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="3feb2533-e9ba-445c-b13d-883175edf2e2">
+            <DataSourceViewID>Final Year</DataSourceViewID>
+            <TableID>Customer_CompanyReviews</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Events</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="ded74b40-5cdd-4453-8ecf-618932dcc6ee">
+          <ID>Events</ID>
+          <Name>Events</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="38bab816-ea97-46de-88f7-c9d81d8c538b">
+            <DataSourceViewID>Final Year</DataSourceViewID>
+            <TableID>dbo_Events</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Sysdiagrams</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="d69f9b10-3592-4144-a994-b38c27af6dd3">
+          <ID>Sysdiagrams</ID>
+          <Name>Sysdiagrams</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="325a9e53-997c-4982-a949-48196eec4e03">
+            <DataSourceViewID>Final Year</DataSourceViewID>
+            <TableID>dbo_sysdiagrams</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Cost</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="9944c524-f7dc-48c9-ae74-0620efef2335">
+          <ID>Cost</ID>
+          <Name>Cost</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="0bda20ed-a68b-49d0-9d4d-8f3904a0a160">
+            <DataSourceViewID>Final Year</DataSourceViewID>
+            <TableID>Booking_Cost</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Company</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="cb2421b8-9271-4130-9395-c3a65e6d12b4">
+          <ID>Company</ID>
+          <Name>Company</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="dcfa418f-2cd8-4318-a27e-d458115a4360">
+            <DataSourceViewID>Final Year</DataSourceViewID>
+            <TableID>Company_Company</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Customer</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="76e60de7-48f0-4f9f-889d-2e9ecb5e6910">
+          <ID>Customer</ID>
+          <Name>Customer</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="05fdeb3b-6065-43d3-b4b3-ae1ec87e87c8">
+            <DataSourceViewID>Final Year</DataSourceViewID>
+            <TableID>Customer_Customer</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Users</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="bcc6da24-7c81-42ec-8c4f-8a1c745e7f11">
+          <ID>Users</ID>
+          <Name>Users</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="791cc250-9a92-4235-b827-d7015c58819b">
+            <DataSourceViewID>Final Year</DataSourceViewID>
+            <TableID>dbo_Users</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Equiptment</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="6cbb604c-9b02-40c4-a944-97dfc1293df9">
+          <ID>Equiptment</ID>
+          <Name>Equiptment</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="8d5d42bf-42f9-4b1d-9e5a-84b18ea4b6b7">
+            <DataSourceViewID>Final Year</DataSourceViewID>
+            <TableID>Equipment_Equiptment</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Equiptment Type</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="8eddc0d9-0732-4596-998f-aba26a6bb473">
+          <ID>Equiptment Type</ID>
+          <Name>Equiptment Type</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="67165210-be24-49ba-bc64-e8020c042dcc">
+            <DataSourceViewID>Final Year</DataSourceViewID>
+            <TableID>Equipment_EquiptmentType</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Staff</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="9934effa-f5b2-4a46-bec8-dd5aa71a0c82">
+          <ID>Staff</ID>
+          <Name>Staff</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="d83ee24b-d033-433d-aab9-a47cb64aa31a">
+            <DataSourceViewID>Final Year</DataSourceViewID>
+            <TableID>Staff_Staff</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Staff Access</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="5f7cc8e1-b80a-4eff-8431-7983003f6d79">
+          <ID>Staff Access</ID>
+          <Name>Staff Access</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="09a2e002-af62-43b9-9461-81a00cb41d3a">
+            <DataSourceViewID>Final Year</DataSourceViewID>
+            <TableID>Staff_StaffAccess</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Staff Role</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="b3af4cc7-dc36-4b2f-bd54-b92cb0043a0a">
+          <ID>Staff Role</ID>
+          <Name>Staff Role</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="ac56d224-4814-40b8-a536-e38f471759cb">
+            <DataSourceViewID>Final Year</DataSourceViewID>
+            <TableID>Staff_StaffRole</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Stock Level</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="d98fd63e-9525-4647-afd5-2a25f0e2adb9">
+          <ID>Stock Level</ID>
+          <Name>Stock Level</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="03170524-8a4f-4251-917a-2929ff740007">
+            <DataSourceViewID>Final Year</DataSourceViewID>
+            <TableID>Stock_StockLevel</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Product Image</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="4b93f8e9-d375-418e-b77f-db92c00857db">
+          <ID>Product Image</ID>
+          <Name>Product Image</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="18d639d0-d56f-4a2b-b6a6-d9be1deedc49">
+            <DataSourceViewID>Final Year</DataSourceViewID>
+            <TableID>Stock_ProductImage</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>System Authorization</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="49f887b0-9dec-41a5-9965-23d974fcc135">
+          <ID>System Authorization</ID>
+          <Name>System Authorization</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="c45d7e10-2ac9-415d-be42-1cfae4d76192">
+            <DataSourceViewID>Final Year</DataSourceViewID>
+            <TableID>Staff_SystemAuthorization</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Product Suppliers</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="85e8278d-8a0c-496f-bb97-9b6b8c45869a">
+          <ID>Product Suppliers</ID>
+          <Name>Product Suppliers</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="2ffdc42e-ac79-419f-80b1-e0a8d368b0c7">
+            <DataSourceViewID>Final Year</DataSourceViewID>
+            <TableID>Stock_ProductSuppliers</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Stock</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="8d49e6ab-557e-42f4-bec5-ff871aa70e27">
+          <ID>Stock</ID>
+          <Name>Stock</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="8b1ad21f-cdee-4b8d-be84-98061e275eae">
+            <DataSourceViewID>Final Year</DataSourceViewID>
+            <TableID>Stock_Stock</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Stock Type</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="c075e130-e86a-4f05-94ad-c6ca80b0d5ee">
+          <ID>Stock Type</ID>
+          <Name>Stock Type</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a7a7c53e-80cc-4d80-92d0-ab4c13032c9f">
+            <DataSourceViewID>Final Year</DataSourceViewID>
+            <TableID>Stock_StockType</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>All Reviews</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="17de5a92-8325-455f-b7c5-1370e57cbd16">
+          <ID>All Reviews</ID>
+          <Name>All Reviews</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="24ba767a-d6f4-42bf-b680-e232b71d8ac5">
+            <DataSourceViewID>Final Year</DataSourceViewID>
+            <TableID>dbo_AllReviews</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Booking Next Month</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="58a147b5-f204-4e4e-8304-706a1a2faf65">
+          <ID>Booking Next Month</ID>
+          <Name>Booking Next Month</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="f1dcc7b7-875b-490c-901d-4a052e141e44">
+            <DataSourceViewID>Final Year</DataSourceViewID>
+            <TableID>dbo_Booking_x0020_Next_x0020_Month</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Booking Attendance dbo</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="2a870883-102a-435c-91d8-743fbed8b42e">
+          <ID>Booking Attendance dbo</ID>
+          <Name>Booking Attendance dbo</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="2c462e1f-7455-422a-b845-a2a2b89c63a1">
+            <DataSourceViewID>Final Year</DataSourceViewID>
+            <TableID>dbo_BookingAttendance</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Company ID38 Bookings</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="eb46428b-42ee-480d-9373-188de1da2989">
+          <ID>Company ID38 Bookings</ID>
+          <Name>Company ID38 Bookings</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="23d1ba4d-86b5-422f-8944-5e732d77551a">
+            <DataSourceViewID>Final Year</DataSourceViewID>
+            <TableID>dbo_CompanyID38Bookings</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Future Bookings</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="ea6cb05d-33ee-4f82-b320-9abeaac3e9a6">
+          <ID>Future Bookings</ID>
+          <Name>Future Bookings</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="cf0d2ca5-280a-4415-8b19-dbfe24dbe57c">
+            <DataSourceViewID>Final Year</DataSourceViewID>
+            <TableID>dbo_Future_x0020_Bookings</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Positive Reviews</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="6b65e2b0-5ade-4fe5-9077-dbef25a92878">
+          <ID>Positive Reviews</ID>
+          <Name>Positive Reviews</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="852743e8-0ee0-4ac4-b103-4de76b27220f">
+            <DataSourceViewID>Final Year</DataSourceViewID>
+            <TableID>dbo_PositiveReviews</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Negative Reviews</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="4e631f57-f958-4c03-8b52-40d85a01d889">
+          <ID>Negative Reviews</ID>
+          <Name>Negative Reviews</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="d8c7f973-5fe8-4c7e-aed0-15a1a6987568">
+            <DataSourceViewID>Final Year</DataSourceViewID>
+            <TableID>dbo_NegativeReviews</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Invoice dbo</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="6264d24c-888c-4b8c-910d-168e2f238134">
+          <ID>Invoice dbo</ID>
+          <Name>Invoice dbo</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="7b1aa8a1-756f-4f0e-82a3-e20447b33655">
+            <DataSourceViewID>Final Year</DataSourceViewID>
+            <TableID>dbo_Invoice</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>All Bookings</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="5d165207-b010-4106-b707-2c5c90745440">
+          <ID>All Bookings</ID>
+          <Name>All Bookings</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="f016a644-68e6-4775-ba18-df29e802312b">
+            <DataSourceViewID>Final Year</DataSourceViewID>
+            <TableID>dbo_All_Bookings</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Price List</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="084fd41d-1bbd-422b-b2a5-9edbc80de600">
+          <ID>Price List</ID>
+          <Name>Price List</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="099fbc2d-8b7f-492f-8628-ea81cc9a2014">
+            <DataSourceViewID>Final Year</DataSourceViewID>
+            <TableID>dbo_Price_x0020_List</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Price Specific</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="092d7dea-1a79-44bd-b00c-2d647a2cbc09">
+          <ID>Price Specific</ID>
+          <Name>Price Specific</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="b25e55a6-92e4-4d96-abbc-2fe996fdbb3c">
+            <DataSourceViewID>Final Year</DataSourceViewID>
+            <TableID>dbo_Price_x0020_Specific</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Stock Photo</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="98278e6e-f1b1-4502-873a-ad687cd9c929">
+          <ID>Stock Photo</ID>
+          <Name>Stock Photo</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="d7af56eb-ce6c-404b-8925-bd38b6a1401c">
+            <DataSourceViewID>Final Year</DataSourceViewID>
+            <TableID>dbo_StockPhoto</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

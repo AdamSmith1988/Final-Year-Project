@@ -1,0 +1,67 @@
+﻿@model BookingsModel.Invoice
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Invoice</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Booking.Notes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Booking.Notes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cost.Cost1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cost.Cost1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PaymentMethod.MethodName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PaymentMethod.MethodName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Paid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Paid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Thanks)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Thanks)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.InvoiceID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

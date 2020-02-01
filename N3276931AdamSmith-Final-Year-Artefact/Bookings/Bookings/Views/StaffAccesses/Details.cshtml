@@ -1,0 +1,43 @@
+﻿@model BookingsModel.StaffAccess
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>StaffAccess</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.StaffRole.RoleName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StaffRole.RoleName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SystemAuthorization.Add_Edit_Del)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SystemAuthorization.Add_Edit_Del)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsAccessible)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsAccessible)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.StaffAccessID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

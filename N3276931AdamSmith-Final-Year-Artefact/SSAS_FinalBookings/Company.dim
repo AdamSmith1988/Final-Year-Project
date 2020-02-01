@@ -1,0 +1,333 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="fb820415-7d5e-4b2e-92ff-18cd062e22e0" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Company</ID>
+  <Name>Company</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1197" scrolltop="449" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="5741" y="6985" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Company" left="-59" top="-2646" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3307" height="7328" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000eb0c0000a01c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Company_Company" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1197</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>449</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-59</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-2646</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="07e46aff-0efc-441f-951f-e53bd5d556e3">
+    <DataSourceViewID>Final Year</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="7cdc00a2-f3ed-4d4b-8c2d-47dc9eb516dd">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="806e8073-aa26-4d5e-b338-6bcc4b7c6377">
+      <ID>Company ID</ID>
+      <Name>Company ID</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4d07d48d-043a-4e6f-9dfb-2fb01ef254cb">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="57ef9fa0-993f-4aca-b8e3-ea69f0042d2c">
+            <TableID>Company_Company</TableID>
+            <ColumnID>CompanyID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="e6b46bcd-f8ea-4cdf-a748-138f63662289">
+          <AttributeID>Industry ID</AttributeID>
+          <Name>Industry ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="501c6aa8-575f-4bde-a923-ee615b3bc776">
+          <AttributeID>Company Name</AttributeID>
+          <Name>Company Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="564f2409-c79d-465d-958a-267cd353f999">
+          <AttributeID>Address</AttributeID>
+          <Name>Address</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="95b0ffb5-2a4b-47d8-a543-da2dc0446045">
+          <AttributeID>Postcode</AttributeID>
+          <Name>Postcode</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="989c962e-207d-467d-85ea-2b1fe8f1feb9">
+          <AttributeID>Phone Number</AttributeID>
+          <Name>Phone Number</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="db839ac1-5e3f-4364-ab34-85eed027a031">
+          <AttributeID>Fax Number</AttributeID>
+          <Name>Fax Number</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="074589a4-d0ef-4bc7-a464-367556c05449">
+          <AttributeID>Website</AttributeID>
+          <Name>Website</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="79153625-9b81-47af-bc64-725edd4fd295">
+          <AttributeID>Facebook</AttributeID>
+          <Name>Facebook</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a472da74-5e26-4d6e-8ac8-93c8c9dbb4f2">
+          <AttributeID>Twitter</AttributeID>
+          <Name>Twitter</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9ed95d5c-7844-4e0e-b3f9-fccbb468cac8">
+          <AttributeID>Linked In</AttributeID>
+          <Name>Linked In</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4f57894e-ea96-4ab1-80e9-cce6c2c528b4">
+          <AttributeID>Registration Date</AttributeID>
+          <Name>Registration Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3d826394-7829-4b44-b152-a333d7a27794">
+          <AttributeID>Active</AttributeID>
+          <Name>Active</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="edfd4d35-e15a-4037-a50f-2f830b73e44c">
+      <ID>Industry ID</ID>
+      <Name>Industry ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f35241dd-d245-44a3-a44e-ae9ea46687df">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3b0a0a3f-fae7-41b2-b82c-45328ef5b018">
+            <TableID>Company_Company</TableID>
+            <ColumnID>IndustryID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="279670b0-c4b3-4ef5-b63b-a1ef8254c778">
+      <ID>Company Name</ID>
+      <Name>Company Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cd204796-62ed-4a6c-84ab-337d020a38cd">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="51e6f642-16c7-48ee-a40a-af5a89e44ff0">
+            <TableID>Company_Company</TableID>
+            <ColumnID>CompanyName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f0d11d29-8c88-4942-9c98-924ea5cb1555">
+      <ID>Address</ID>
+      <Name>Address</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bba4b333-9746-42dd-aa8c-1d61484fefe9">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7400b684-b90e-4a45-a232-d04ded69e096">
+            <TableID>Company_Company</TableID>
+            <ColumnID>Address</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2b38ae89-7bf3-48a0-8a2b-9b850fd1fe83">
+      <ID>Postcode</ID>
+      <Name>Postcode</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e9762f7c-a968-4bc5-b469-89ff97576513">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="35caef93-3c78-4bbe-b0e5-b34f2980745c">
+            <TableID>Company_Company</TableID>
+            <ColumnID>Postcode</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="36e498e4-2a8d-453e-b3df-773febfb8885">
+      <ID>Phone Number</ID>
+      <Name>Phone Number</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="091882cc-f2eb-40fb-9084-00bda97bac48">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="57958ef3-6523-4238-8029-138aee561877">
+            <TableID>Company_Company</TableID>
+            <ColumnID>PhoneNumber</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="28290289-674c-43aa-83f7-a7b65bc06fd4">
+      <ID>Fax Number</ID>
+      <Name>Fax Number</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="28eee6c7-8ac2-4b0b-9861-b468d08c99e5">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1bfdc853-08a5-4145-86f3-44126d165037">
+            <TableID>Company_Company</TableID>
+            <ColumnID>FaxNumber</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3352f8d7-92a5-494a-821f-83739feff572">
+      <ID>Website</ID>
+      <Name>Website</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="19c2b6f6-ab8f-4db1-b56c-990bbfa04697">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ffbee37e-be60-44ea-be33-e745c9bcc4f8">
+            <TableID>Company_Company</TableID>
+            <ColumnID>Website</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d9611a17-5415-4b6e-b161-6ab075f62ca6">
+      <ID>Facebook</ID>
+      <Name>Facebook</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="102223f5-f826-40c2-9e64-a1543d40077e">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="801b1a74-4c6a-4dad-9a35-f705da1dd957">
+            <TableID>Company_Company</TableID>
+            <ColumnID>Facebook</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="42d86f04-95d2-40b3-a504-972d185d7e14">
+      <ID>Twitter</ID>
+      <Name>Twitter</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="081366cf-03d3-4c9f-9fcf-57b14ce8bd70">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fdcd7c6d-7272-4b05-88d1-bcba2315bb4b">
+            <TableID>Company_Company</TableID>
+            <ColumnID>Twitter</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f9b72552-216c-477d-af86-7d90efc12627">
+      <ID>Linked In</ID>
+      <Name>Linked In</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8f039609-6d66-4e62-81cb-31d76f70ae45">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b037ce3b-174e-4349-a9d5-f727a971b22d">
+            <TableID>Company_Company</TableID>
+            <ColumnID>LinkedIn</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c6b3bd13-9c38-42ba-baef-bbc81da42cc4">
+      <ID>Registration Date</ID>
+      <Name>Registration Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3f500de7-cba7-4fc9-9f81-4b2090dbcbfb">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cb7f006c-9130-4d94-940c-ac9f439db6a7">
+            <TableID>Company_Company</TableID>
+            <ColumnID>RegistrationDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fe8013a1-0921-422a-a6a2-6764ce536857">
+      <ID>Active</ID>
+      <Name>Active</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="55b2010b-f8c9-4bf8-93d7-cc64cb1a26ce">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f143932b-551b-41a0-a115-0f977fa555c7">
+            <TableID>Company_Company</TableID>
+            <ColumnID>Active</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

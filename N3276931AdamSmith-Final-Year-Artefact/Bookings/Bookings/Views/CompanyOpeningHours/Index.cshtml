@@ -1,0 +1,58 @@
+﻿@model IEnumerable<BookingsModel.CompanyOpeningHour>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Company.CompanyName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DayOfWeek)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OpeningTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ClosingTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NotesIfClosed)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Company.CompanyName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DayOfWeek)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OpeningTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ClosingTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NotesIfClosed)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.OpeningTimeID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.OpeningTimeID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.OpeningTimeID })
+        </td>
+    </tr>
+}
+
+</table>

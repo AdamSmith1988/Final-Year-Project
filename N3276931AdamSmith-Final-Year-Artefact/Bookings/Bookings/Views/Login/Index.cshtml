@@ -1,0 +1,110 @@
+﻿@model Bookings.Models.Staff
+@{
+    Layout = null;
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>@ViewBag.Title - My ASP.NET Application</title>
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+
+    <style>
+        #login-div {
+        position: absolute;
+        left: 40%;
+        top: 40%; 
+        border: 1px solid #ccc;
+        padding: 10px 10px;
+        }
+
+        .field-validation-error {
+        color: red;
+        
+        }
+
+    </style>
+</head>
+<body>
+    <img src="~/Content/img/Full2.jpg" class="fixed-top" />
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="/home" class="navbar-left"><img src="~/Content/img/LogoSingle_2.png"></a>
+
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="login-div">
+            @using (Html.BeginForm("Autherise", "Login", FormMethod.Post))
+            {
+                <table>
+                    <tr>
+                        <td></td>
+                        <td style="text-decoration:underline">Booking Bridge</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            @Html.LabelFor(model => model.Username)
+                        </td>
+                        <td>
+                            @Html.EditorFor(model => model.Username)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>@Html.ValidationMessageFor(model => model.Username)</td>
+                    </tr>
+                    <tr>
+                        <td>@Html.LabelFor(model => model.Password)</td>
+                        <td>@Html.EditorFor(model => model.Password)</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>@Html.ValidationMessageFor(model => model.Password)</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label class="field-validation-error">@Html.DisplayFor(model => model.LoginErrorMessage)</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" name="name" value="Login" />
+                            <input type="reset" name="name" value="Clear" />
+                        </td>
+                    </tr>
+                </table>
+            }
+
+
+        </div>
+
+        <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+        <script src="~/Scripts/jquery.validate.min.js"></script>
+        <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    </body>
+</html>

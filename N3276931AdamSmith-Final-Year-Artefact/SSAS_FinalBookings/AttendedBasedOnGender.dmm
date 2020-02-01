@@ -1,0 +1,621 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="9581d2d5-b5e7-4c9b-bab9-feca87806b3d" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>AttendedBasedOnGender</ID>
+  <Name>AttendedBasedOnGender</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CaseTableName</Name>
+      <Value>Customer_Customer</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="14" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2888" scrolltop="36" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="11113" y="9260" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="BookingAttendance" left="20" top="8247" logicalid="7" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000b80b0000a50a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Booking_BookingAttendance" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Customer" left="2712" top="0" logicalid="8" controlid="2" masterid="0" hint1="0" hint2="0" width="3016" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000c80b000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Customer_Customer" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Booking" left="5420" top="7400" logicalid="9" controlid="3" masterid="0" hint1="0" hint2="0" width="3000" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000b80b000043110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Booking_Booking" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="2720" top="9210" logicalid="10" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_BookingAttendance_Booking]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="1" sourceattachpoint="16" destattachpoint="15" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="5420" y="9609" />
+              <point x="3020" y="9609" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="1220" top="4501" logicalid="11" controlid="5" masterid="0" hint1="0" hint2="0" width="2300" height="4046" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_BookingAttendance_Customer]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="1" sourceattachpoint="1" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="3120" y="5000" />
+              <point x="3120" y="6623" />
+              <point x="1520" y="6623" />
+              <point x="1520" y="8247" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="4371" top="4501" logicalid="12" controlid="6" masterid="0" hint1="0" hint2="0" width="2849" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Booking_Customer]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="3" sourceattachpoint="7" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="4770" y="5000" />
+              <point x="4770" y="6200" />
+              <point x="6920" y="6200" />
+              <point x="6920" y="7400" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2888</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>36</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>75</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="08813a8e-d241-44f1-840a-1607d08bd1c8">
+    <DataSourceViewID>Final Year</DataSourceViewID>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="a8056a65-9619-478f-b8eb-f2998a9a61ee">
+      <ID>Active</ID>
+      <Name>Active</Name>
+      <Type>Boolean</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="59d161f7-3975-4237-85a0-f0aea7e4cdc2">
+          <DataType>Boolean</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="35d9c190-597e-4b16-8276-273519b9e561">
+            <TableID>Customer_Customer</TableID>
+            <ColumnID>Active</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="6162dd1e-a36d-49e9-90c6-5a9a0cea137f">
+      <ID>Address</ID>
+      <Name>Address</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="28f45959-7d33-40b2-8b4e-4052cbe59f4c">
+          <DataType>WChar</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4fa8e8af-08e8-43fe-b536-8e471ecc5ca8">
+            <TableID>Customer_Customer</TableID>
+            <ColumnID>Address</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="00e76746-923e-472f-9e35-227bfa462c63">
+      <ID>Customer Id</ID>
+      <Name>Customer Id</Name>
+      <IsKey>true</IsKey>
+      <Type>Long</Type>
+      <Content>Key</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="16266441-ca9a-4f0b-8821-a6d79a6a3a81">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5e7e5d33-4450-469e-aecf-1e7b66b03591">
+            <TableID>Customer_Customer</TableID>
+            <ColumnID>CustomerId</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="30d2ab1c-dd39-4138-a87c-deef8e5f6d06">
+      <ID>Date Of Birth</ID>
+      <Name>Date Of Birth</Name>
+      <Type>Date</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3097b6f6-6005-4c2b-9d47-85c3b9363c59">
+          <DataType>Date</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="66ae7b69-8645-4c97-84ed-199dff0d85f2">
+            <TableID>Customer_Customer</TableID>
+            <ColumnID>DateOfBirth</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="30d8639a-995b-43fb-b0cc-5b4a6f246830">
+      <ID>Email</ID>
+      <Name>Email</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f10ac00b-0657-44a4-bc11-fe744e3039fc">
+          <DataType>WChar</DataType>
+          <DataSize>256</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="158e02d5-5fa6-4e3d-af32-80a237dc4554">
+            <TableID>Customer_Customer</TableID>
+            <ColumnID>Email</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="ff6a0a5e-91f3-48a7-9f56-5d0c4dab4616">
+      <ID>First Name</ID>
+      <Name>First Name</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a8f53bce-02ad-4085-ac8d-4094d0d46f81">
+          <DataType>WChar</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="17101287-3675-4cf5-8bb5-34b304d68eee">
+            <TableID>Customer_Customer</TableID>
+            <ColumnID>FirstName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="807bffef-f9b0-4bfa-8d4a-b4d56205ed45">
+      <ID>Gender</ID>
+      <Name>Gender</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="88959521-1c49-44dd-80be-cea3fa7e2c11">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e68c97e9-f68e-40b7-8c96-3be5e048642e">
+            <TableID>Customer_Customer</TableID>
+            <ColumnID>Gender</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="764637e4-d8db-4359-9313-2abba4b99206">
+      <ID>Last Name</ID>
+      <Name>Last Name</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="16e8aef6-0ec2-4408-b4be-cd4ee836d9b3">
+          <DataType>WChar</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="91fce66b-52d6-45ca-b1ce-31c96c711cf3">
+            <TableID>Customer_Customer</TableID>
+            <ColumnID>LastName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="87ed3a78-1069-4f17-90cb-c2ab5de66fc0">
+      <ID>Phone Number</ID>
+      <Name>Phone Number</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2c1d52e2-dcc3-4c51-836d-6e16f9e06f5f">
+          <DataType>WChar</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="556b6e7d-ff1b-4083-8695-a2c6ceb3f9fc">
+            <TableID>Customer_Customer</TableID>
+            <ColumnID>PhoneNumber</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="a2b22dfc-79dd-4da0-b5d1-c8040f1f9245">
+      <ID>Postcode</ID>
+      <Name>Postcode</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="423fcb3a-2d9c-485e-9887-63196e7ca550">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="76b0c95e-3fce-4537-9be7-f8234683396f">
+            <TableID>Customer_Customer</TableID>
+            <ColumnID>Postcode</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="36998710-283f-4e6f-ae60-30c709f3eea0">
+      <ID>Title</ID>
+      <Name>Title</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d279259a-f2c4-4fa1-b87f-53160257f641">
+          <DataType>WChar</DataType>
+          <DataSize>40</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="59c2342a-02b0-4760-946b-e0ebaf4172c7">
+            <TableID>Customer_Customer</TableID>
+            <ColumnID>Title</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="46a6ca97-b6dd-4d01-bbf0-379d974daceb">
+      <Annotations>
+        <Annotation>
+          <Name>MDXFilterComponent</Name>
+        </Annotation>
+      </Annotations>
+      <ID>Booking</ID>
+      <Name>Booking</Name>
+      <ForeignKeyColumns>
+        <ForeignKeyColumn dwd:design-time-name="09d59714-28bd-455b-8bea-f694f93c24f4">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <NullProcessing>Error</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fab6e691-8c37-4072-a36a-4b45acf49c91">
+            <TableID>Booking_Booking</TableID>
+            <ColumnID>CustomerID</ColumnID>
+          </Source>
+        </ForeignKeyColumn>
+      </ForeignKeyColumns>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="10e1bfaf-2d0d-4b67-a026-a31d09178272">
+          <ID>Active</ID>
+          <Name>Active</Name>
+          <Type>Boolean</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn dwd:design-time-name="df80ad61-955d-42ea-8bea-5321f513596e">
+              <DataType>Boolean</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="d4038c51-74af-4ff2-a5c1-0c50c19d629c">
+                <TableID>Booking_Booking</TableID>
+                <ColumnID>Active</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="ac544cd0-2af6-4023-a95b-48f212b23e49">
+          <ID>Booking ID</ID>
+          <Name>Booking ID</Name>
+          <IsKey>true</IsKey>
+          <Type>Long</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn dwd:design-time-name="524207df-d972-47c1-a6d5-09a19e81b6f7">
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="508438ff-89c0-4db9-9a51-75372ccb2512">
+                <TableID>Booking_Booking</TableID>
+                <ColumnID>BookingID</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="a42805a4-c3e3-45e9-9e71-e6aa5329cd29">
+          <ID>Company ID</ID>
+          <Name>Company ID</Name>
+          <Type>Long</Type>
+          <Content>Continuous</Content>
+          <KeyColumns>
+            <KeyColumn dwd:design-time-name="cceb8428-438b-42b6-9b5e-75eaa224301e">
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="99db51a1-14cc-4b50-9aec-894d006a8917">
+                <TableID>Booking_Booking</TableID>
+                <ColumnID>CompanyID</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="d892036b-ac71-4a28-b908-9214f6850ab9">
+          <ID>Event ID</ID>
+          <Name>Event ID</Name>
+          <Type>Long</Type>
+          <Content>Continuous</Content>
+          <KeyColumns>
+            <KeyColumn dwd:design-time-name="0aa998e2-20bf-4179-b17b-74ee6d7d5840">
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="0da7040a-e708-4742-a75f-bc75246accdb">
+                <TableID>Booking_Booking</TableID>
+                <ColumnID>EventID</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="c209be17-c0d2-4cb6-acc1-cee82ab84fbd">
+          <ID>Notes</ID>
+          <Name>Notes</Name>
+          <Type>Text</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn dwd:design-time-name="aa7a16c3-94df-4602-849c-6dbeefecb10f">
+              <DataType>WChar</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="34396d72-a68b-4200-8fcc-68e4b6b20f5e">
+                <TableID>Booking_Booking</TableID>
+                <ColumnID>Notes</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="b4021d0b-6d04-42b3-92a8-65944c1d1700">
+          <ID>Service ID</ID>
+          <Name>Service ID</Name>
+          <Type>Long</Type>
+          <Content>Continuous</Content>
+          <KeyColumns>
+            <KeyColumn dwd:design-time-name="fa3f2fb6-9208-4a89-b8fa-8cf033e8700e">
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="7125de4d-3c79-403e-9dc7-4652a2e629f6">
+                <TableID>Booking_Booking</TableID>
+                <ColumnID>ServiceID</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="8b8e9c7e-94a3-4c50-addc-a887054f45d8">
+          <ID>Staff ID</ID>
+          <Name>Staff ID</Name>
+          <Type>Long</Type>
+          <Content>Continuous</Content>
+          <KeyColumns>
+            <KeyColumn dwd:design-time-name="01927195-309f-4506-be22-e6361e9d0ce7">
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="666359fa-8869-4319-8f15-b3034991b18c">
+                <TableID>Booking_Booking</TableID>
+                <ColumnID>StaffID</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+    </Column>
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="659f4f77-f323-4ad5-82c8-fe363f03f74c">
+      <Annotations>
+        <Annotation>
+          <Name>MDXFilterComponent</Name>
+        </Annotation>
+      </Annotations>
+      <ID>Booking Attendance</ID>
+      <Name>Booking Attendance</Name>
+      <ForeignKeyColumns>
+        <ForeignKeyColumn dwd:design-time-name="e10671af-8595-49cf-9ed4-71b25e5815da">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <NullProcessing>Error</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2f279b81-ed82-47df-90e0-659ccdca0245">
+            <TableID>Booking_BookingAttendance</TableID>
+            <ColumnID>CustomerID</ColumnID>
+          </Source>
+        </ForeignKeyColumn>
+      </ForeignKeyColumns>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="09a0acd7-2c1b-4db4-9309-b6bdfc866ba3">
+          <ID>Attendance ID</ID>
+          <Name>Attendance ID</Name>
+          <IsKey>true</IsKey>
+          <Type>Long</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn dwd:design-time-name="7d6dccad-5bf1-48c5-ab9d-ad9a26891e34">
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="6a2363a5-3889-4226-a5fe-772f4e55a7da">
+                <TableID>Booking_BookingAttendance</TableID>
+                <ColumnID>AttendanceID</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="4ee42ddc-1138-4692-a1d3-0634e58f7b24">
+          <ID>Attended</ID>
+          <Name>Attended</Name>
+          <Type>Boolean</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn dwd:design-time-name="b4b71745-6e23-4dea-953d-96691959ec57">
+              <DataType>Boolean</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="accfb7d0-57d3-45f7-94a7-8bf21d8d51e9">
+                <TableID>Booking_BookingAttendance</TableID>
+                <ColumnID>Attended</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="a626cefa-73f6-4872-85b7-e09b0eca06c1">
+          <ID>Booking ID</ID>
+          <Name>Booking ID</Name>
+          <Type>Long</Type>
+          <Content>Continuous</Content>
+          <KeyColumns>
+            <KeyColumn dwd:design-time-name="b4d6c645-23d1-45dc-a30e-ea68c3024600">
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="7e1e111d-0bf8-49ce-aa3e-062aa3745991">
+                <TableID>Booking_BookingAttendance</TableID>
+                <ColumnID>BookingID</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="98231706-e623-41f4-b126-8332fb6fd2df">
+      <ID>AttendedBasedOnGender</ID>
+      <Name>AttendedBasedOnGender</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Decision_Trees</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="6362c0f6-8aaa-4a74-a28f-567b4d99cf74">
+          <ID>Customer Id</ID>
+          <Name>Customer Id</Name>
+          <SourceColumnID>Customer Id</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="b54d33c8-08ff-4e00-aa4f-dbf50a74efbe">
+          <ID>Date Of Birth</ID>
+          <Name>Date Of Birth</Name>
+          <SourceColumnID>Date Of Birth</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="cb48d562-3c8d-4af1-99f6-4f6885a19a3c">
+          <ID>Gender</ID>
+          <Name>Gender</Name>
+          <SourceColumnID>Gender</SourceColumnID>
+          <Usage>Predict</Usage>
+        </Column>
+        <Column dwd:design-time-name="7698959c-59e8-43be-8827-1bf2c98a0456">
+          <ID>Booking</ID>
+          <Name>Booking</Name>
+          <SourceColumnID>Booking</SourceColumnID>
+          <Columns>
+            <Column dwd:design-time-name="dce98bcf-8348-4971-8fda-82c14997cfef">
+              <ID>Booking ID</ID>
+              <Name>Booking ID</Name>
+              <SourceColumnID>Booking ID</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+          </Columns>
+        </Column>
+        <Column dwd:design-time-name="4d734779-10e9-4883-972e-682125766ad2">
+          <ID>Booking Attendance</ID>
+          <Name>Booking Attendance</Name>
+          <SourceColumnID>Booking Attendance</SourceColumnID>
+          <Columns>
+            <Column dwd:design-time-name="138f625b-d25e-4c92-8892-15b97b4635ca">
+              <ID>Attendance ID</ID>
+              <Name>Attendance ID</Name>
+              <SourceColumnID>Attendance ID</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+            <Column dwd:design-time-name="65c806e1-3406-4a62-a015-b565db99177d">
+              <ID>Attended</ID>
+              <Name>Attended</Name>
+              <SourceColumnID>Attended</SourceColumnID>
+              <Usage>PredictOnly</Usage>
+            </Column>
+            <Column dwd:design-time-name="bfe1ff5b-4546-469c-bce6-ad24da7f5c58">
+              <ID>Booking ID</ID>
+              <Name>Booking ID</Name>
+              <SourceColumnID>Booking ID</SourceColumnID>
+              <Usage>Predict</Usage>
+            </Column>
+          </Columns>
+        </Column>
+        <Column dwd:design-time-name="175c39e1-18d3-4840-8f09-318a5856eaa1">
+          <ID>Address</ID>
+          <Name>Address</Name>
+          <SourceColumnID>Address</SourceColumnID>
+          <Usage>Predict</Usage>
+        </Column>
+      </Columns>
+    </MiningModel>
+  </MiningModels>
+  <ddl100_100:HoldoutMaxPercent>30</ddl100_100:HoldoutMaxPercent>
+</MiningStructure>

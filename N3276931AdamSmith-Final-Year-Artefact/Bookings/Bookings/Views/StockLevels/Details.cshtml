@@ -1,0 +1,35 @@
+﻿@model BookingsModel.StockLevel
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>StockLevel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Stock.ProductName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Stock.ProductName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductStockLevel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductStockLevel)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ProductStockLevelID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

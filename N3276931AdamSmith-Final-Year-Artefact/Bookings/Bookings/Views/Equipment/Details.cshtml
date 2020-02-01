@@ -1,0 +1,35 @@
+﻿@model BookingsModel.Equiptment
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Equiptment</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.EquiptmentType.EquiptmentTypeName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EquiptmentType.EquiptmentTypeName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EquiptmentName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EquiptmentName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.EquiptmentID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

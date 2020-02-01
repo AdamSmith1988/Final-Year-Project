@@ -1,0 +1,35 @@
+﻿@model BookingsModel.SystemAuthorization
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SystemAuthorization</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Add_Edit_Del)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Add_Edit_Del)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AuthorzationName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AuthorzationName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.SystemAuthorizationID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

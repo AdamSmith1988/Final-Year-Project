@@ -1,0 +1,40 @@
+﻿@model IEnumerable<BookingsModel.StockLevel>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Stock.ProductName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductStockLevel)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Stock.ProductName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductStockLevel)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ProductStockLevelID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ProductStockLevelID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ProductStockLevelID })
+        </td>
+    </tr>
+}
+
+</table>
